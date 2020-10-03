@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     context: resolve(__dirname, 'src'),
-    entry: ['./advanced.ts'],
+    entry: ['./train.ts'],
     plugins: [
         new HTMLWebpackPlugin(),
         new CleanWebpackPlugin(),
