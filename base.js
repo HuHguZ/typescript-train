@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     context: resolve(__dirname, 'src'),
-    entry: ['./index.ts'],
+    entry: ['./advanced.ts'],
     plugins: [
         new HTMLWebpackPlugin(),
         new CleanWebpackPlugin(),
@@ -28,7 +28,8 @@ module.exports = {
                                 '@babel/preset-typescript'
                             ],
                             plugins: [
-                                '@babel/plugin-proposal-class-properties'
+                                ['@babel/plugin-proposal-decorators', { legacy: true }],
+                                '@babel/plugin-proposal-class-properties',
                             ]
                         }
                     }
