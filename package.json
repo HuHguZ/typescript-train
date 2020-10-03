@@ -1,0 +1,36 @@
+{
+    "name": "typescript-train",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:watch": "webpack --mode development --watch --config ./development.js",
+        "build:development": "cross-env NODE_ENV=development webpack --config ./development.js",
+        "build:production": "cross-env NODE_ENV=production webpack --config ./production.js",
+        "start:watch": "cross-env NODE_END=development webpack-dev-server --mode development --config ./development.js --open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HuHguZ/typescript-train.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HuHguZ/typescript-train/issues"
+    },
+    "homepage": "https://github.com/HuHguZ/typescript-train#readme",
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "@babel/preset-typescript": "^7.10.4",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "cross-env": "^7.0.2",
+        "html-webpack-plugin": "^4.5.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^5.1.4"
+    }
+}
